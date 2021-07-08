@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>SliderHeap</title>
+	<title>Iwe</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
@@ -19,11 +19,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" href="libs/slick/css/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="libs/slick/css/slick-theme.css"/>
+
 	<link rel="stylesheet" href="libs/bootstrap4/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
 
@@ -40,50 +40,32 @@
 
 <header>
 	<div class="top-header">
-		<div class="container-fluid container-xl">
+		<div class="container-fluid container-xl container-widder">
 			<div class="row">
 				<div class="col-12 wrapper-content">
 					<div class="d-flex left-snippet">
 						<a href="#" class="logo d-flex">
-							<img src="img/header-logo.svg" alt="">
+							<img src="img/logo.svg" alt="">
 						</a>
-						<div class="input-wrapper d-none d-lg-flex">
-							<input type="text" class="standard-input">
-							<button class="search-button" type="submit">
-								<img src="img/search-icon.svg" alt="">
-							</button>
-						</div>
 					</div>
 					<div class="d-flex right-snippet">
-						<a href="#" class="standard-text d-none d-sm-flex">login</a>
-						<a href="#" class="button standard-indent blue-button standard d-none d-sm-flex">get started</a>
+						<ul class="top-menu d-flex">
+							<li>
+								<a href="#" class="standard-text d-none d-sm-flex active">Home</a>
+							</li>
+							<li>
+								<a href="#" class="standard-text d-none d-sm-flex">About</a>
+							</li>
+							<li>
+								<a href="#" class="standard-text d-none d-sm-flex">DK/<span class="active">EN</span></a>
+							</li>
+						</ul>
+						<a href="#" class="button standard-indent blue-button standard d-flex">Request an invite</a>
 						<a class="navi-hamburger">
 							<span class="top"></span>
 							<span></span>
 							<span class="bottom"></span>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="bottom-header-line">
-		<div class="container-fluid container-xl">
-			<div class="row">
-				<div class="col-12">
-					<div class="wrapper-content">
-						<ul class="">
-							<li><a class="standard-text" href="#">All templates</a></li>
-							<li><a class="standard-text" href="#">Timeline</a></li>
-							<li><a class="standard-text" href="#">SWOT</a></li>
-							<li><a class="standard-text" href="#">Roadmap</a></li>
-							<li><a class="standard-text" href="#">Process</a></li>
-							<li><a class="standard-text" href="#">Marketing</a></li>
-							<li><a class="standard-text" href="#">Goals</a></li>
-							<li><a class="standard-text" href="#">Education</a></li>
-							<li><a class="standard-text" href="#">Pricing Table</a></li>
-							<li><a class="standard-text" href="#">Dashboards</a></li>
-						</ul>
 					</div>
 				</div>
 			</div>
@@ -95,14 +77,6 @@
 <div class="nav-mobile">
 	<div id="collapse">
 		<ul>
-			<li class="first-item-menu custom-search">
-				<div class="input-wrapper d-flex">
-					<input type="text" class="standard-input">
-					<button class="search-button" type="submit">
-						<img src="img/search-icon.svg" alt="">
-					</button>
-				</div>
-			</li>
 			<li class="first-item-menu">
 				<a href="#" class="link"><span>All templates</span></a>
 			</li>
@@ -144,362 +118,130 @@
 <!--End for mobile menu-->
 
 <section class="section main-banner">
-	<div class="block-for-snippet-top"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
-				<div class="wrapper-content">
-					<h1 class="color-dark-blue main-title">Create impactful Presentations
-						with our editable infographic
-						slides and templates</h1>
-					<p class="section__section-description color-dark-gray">Get unlimited access to our ever-growing library of 750+ slides, templates and Infographics.</p>
-					<a href="#" class="d-inline-flex button standard-indent blue-button standard">get started</a>
+				<div class="content-wrapper">
+					<h1 class="section__section-title ">Everyone deserves
+						a great network</h1>
+					<p class="section__section-description color-gray text-center">Join or create micro-networks
+						that help people succeed</p>
+					<a href="#" class="button bigger standard-indent blue-button standard d-flex">Request an invite</a>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="block-for-snippet-center-bottom"></div>
+</section>
+<section class="section banner light-pink">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 content-wrapper">
+				<div class="content-left-side">
+					<h3 class="section__section-title snippet"><span class="text-break"><span class="letter-dark-green">D</span><span class="letter-orange">o</span></span>
+						<span class="letter-dark-orange">b</span><span class="color-red">e</span><span class="color-violet">t</span><span class="color-darkest-blue">t</span><span class="color-green">e</span><span class="color-pink">r</span></h3>
+				</div>
+				<p class="content-right-side section__section-small-description color-dark-black">
+					iwe is a platform for micro-networks that drive social change at scale. <a href="#" class="link color-blue">Request an invite </a>to join our early beta program in Q4 2021.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section common">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 d-flex flex-column align-items-center">
+				<div class="content-wrapper d-flex flex-column align-items-center">
+					<h3 class="section__common-title text-center color-dark-black">Good cause, meet great effect</h3>
+					<p class="color-gray section__section-middle-description text-center">Supercharge your social impact with a network of like-minded superheroes</p>
+				</div>
+				<div class="tile-blocks">
+					<div class="tile-body-wrapper">
+						<div class="tile-body">
+							<img src="img/tile-icon-1.png" alt="" class="tile-body__tile-img">
+							<h3 class="tile-body__title">Join or create a network</h3>
+							<p class="tile-body__description color-gray">Networks are based on geography, personal strengths, interests, background, language, personal goals, etc.</p>
+						</div>
+					</div>
+					<div class="tile-body-wrapper">
+						<div class="tile-body">
+							<img src="img/tile-icon-2.png" alt="" class="tile-body__tile-img">
+							<h3 class="tile-body__title">Follow iwe’s
+								change algorithm</h3>
+							<p class="tile-body__description color-gray">For every goal your network sets, iwe’s change algorithm helps you stay on course and make it happen.</p>
+						</div>
+					</div>
+					<div class="tile-body-wrapper">
+						<div class="tile-body">
+							<img src="img/tile-icon-3.png" alt="" class="tile-body__tile-img">
+							<h3 class="tile-body__title">Achieve your goals together</h3>
+							<p class="tile-body__description color-gray">Regardless of the goals you set, you can use all your shared resources to get there and achieve them together.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section img-banner">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h3 class="section__common-title color-white">A strong network for the 8%
+					who don’t have one</h3>
+				<p class="section__common-description color-white">In Denmark, 8% of every generation don’t get a job or continue in education after lower secondary school.
+					You can help change this by giving the 14- to 16-year-olds a strong network and the help, support and recognition that come with it. Join iwe to change their outlook for good. </p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section common context-block">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-8 col-md-6 col-lg-4 img-wrapper">
+				<img src="img/phone-img-1.png" alt="" class="img-block">
+			</div>
+			<div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
+				<h3 class="section__common-title"><span class="break-word">An app made</span>
+					for change</h3>
+				<p class="section__section-small-description color-gray">iwe doesn’t just drive change, it embraces it. At the heart of every network sits iwe’s proprietary change algorithm, 5C, which ensures that your unique skills, strengths and resources are used to their fullest. With 5C hard at work for you and your network, it’s never been easier and more rewarding to create real and lasting change.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">
+				<h3 class="section__common-title right-text"><span class="break-word">OAltruism</span>
+					× you</h3>
+				<p class="section__section-small-description color-gray right-text">iwe is not just a free-to-use purpose-driven platform. It’s a way for you to get your altruistic superpowers going and multiply your impact on the world around you. All you have to do is join or create an iwe network to become part of a digital, social revolution for good.</p>
+			</div>
+			<div class="col-12 col-sm-8 col-md-6 col-lg-4 order-1 order-lg-2 img-wrapper right-side d-flex flex-column justify-content-center">
+				<img src="img/phone-img-2.png" alt="" class="img-block">
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-sm-8 col-md-6 col-lg-4 img-wrapper">
+				<img src="img/phone-img-3.png" alt="" class="img-block">
+			</div>
+			<div class="col-12 col-lg-8 d-flex flex-column justify-content-center">
+				<h3 class="section__common-title"><span class="break-word">Oh my, what big</span>
+					plans you have</h3>
+				<p class="section__section-small-description color-gray">Even the biggest plans fit snugly into iwe. That’s because we’ve built everything you need to know about joining, creating and benefiting from a network into the app, so you can focus on getting things done and realise those big plans of yours.</p>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-10 col-md-10 col-lg-6 d-flex flex-row justify-content-center">
+				<h3 class="section__common-title text-center color-dark-black mb-lg-0"><span class="break-word">Do better</span>
+					<span class="break-word">for yourself</span>
+					and the world
+					around you</h3>
+			</div>
+			<div class="col-12 col-lg-6 d-flex flex-column justify-content-center">
+				<p class="section__section-small-description color-dark-black">iwe is all about improving yourself and the world around you. We believe that even a small group of people can have a huge impact, if you give them the right tools. For us, it starts with a close, personal network and the help, support and recognition that comes with it.</p>
+			</div>
+		</div>
+	</div>
 </section>
 
-<section class="section">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-xl-10">
-				<h3 class="section__section-title text-center color-black-gray">Compatible with your Favorite App</h3>
-				<p class="section__section-description text-center color-dark-gray">All our slides are compatible with PowerPoint, Keynote and Google slides; allowing you to insert the template and instantly customize them according to your needs.</p>
-			</div>
-			<div class="col-12">
-				<div class="white-tile-blocks">
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/powerpoint_icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Microsoft PowerPoint</h4>
-						</div>
-					</div>
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/tablet-holder-icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Keynote</h4>
-						</div>
-					</div>
-					<div class="white-tile-blocks__wrapper">
-						<div class="white-tile-blocks__body">
-							<img class="white-tile-blocks__body__img-block" src="img/google-slides-icon.svg" alt="">
-							<h4 class="section__section-small-title color-dark-blue">Google Slides</h4>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section how-it-works text-center">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-xl-11">
-				<h3 class="section__section-title text-center color-black-gray">How does SlideHeap work?</h3>
-				<p class="section__section-description text-center color-dark-gray">We know ‘a picture is worth than a thousand words’. In today’s world, using infographics is the best tool to get your messages out there instead of just using plain text and images. Infographics have emerged as the best solution to convey your presentation more appealingly. All you need to do is open the file and edit logos, change colors, insert figures, add text according to your convenience. </p>
-			</div>
-		</div>
-	</div>
-	<img class="main-img" src="img/How-its-works-bg.png" alt="">
-</section>
-<section class="section feature-section one-snippet">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-12 col-xl-5 order-2 order-xl-1">
-				<div class="wrapper-content">
-					<h3 class="section__section-title reduce-line-height text-left color-black-gray">Focus on what matters.</h3>
-					<p class="section__section-description increases-line-height color-dark-gray">Great presentations are a mix of good slides and great delivery. With Slideheap, you can create visually immersive presentations in just minutes, giving you time to focus on getting the delivery right.</p>
-					<a href="#" class="d-inline-flex button standard-indent blue-button standard">Get Started Now!</a>
-				</div>
-			</div>
-			<div class="col-12 col-xl-7 order-1 order-xl-2">
-				<img src="img/feature-img-1.png" alt="">
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section feature-section two-snippets">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-xl-7 order-1">
-				<img src="img/feature-img-1.png" alt="">
-			</div>
-			<div class="col-12 col-lg-12 col-xl-5 order-2">
-				<div class="wrapper-content">
-					<h3 class="section__section-title reduce-line-height text-left color-black-gray">Show. Don't just tell.</h3>
-					<p class="section__section-description increases-line-height color-dark-gray">Turning presentations into a narrative or a story can entertain, involve and engage the audience at an entirely different level. There is no other better alternative than infographics when creating visual stories that do the talking for you.</p>
-					<a href="#" class="d-inline-flex button standard-indent blue-button standard">Get Started Now!</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section templates-example snippet white-bg">
-	<div class="snippet-block"></div>
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-xl-10">
-				<h3 class="section__section-title text-center color-black-gray">1000+ stunning and unique templates</h3>
-				<p class="section__section-description text-center color-dark-gray">All our slides are compatible with PowerPoint, Keynote and Google slides; allowing you to insert the template and instantly customize them according to your needs.</p>
-			</div>
-			<div class="col-12">
-				<div class="templates-tile__list">
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-					<div class="templates-tile__wrapper">
-						<div class="templates-tile__body">
-							<img src="img/template-tile-img.jpg" alt="">
-						</div>
-						<h5 class="snippet-text">Design Templates</h5>
-					</div>
-				</div>
-				<div class="button-wrapper d-flex flex-row justify-content-center">
-					<a href="#" class="d-inline-flex button standard-indent blue-button standard">View all</a>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section blue-banner-background">
-	<div class="container">
-		<div class="row">
-			<div class="col-12 d-flex flex-column justify-content-center align-items-center">
-				<h3 class="section__section-title text-center color-white">Lifetime Access to our premium library</h3>
-				<p class="section__section-description increases-line-height text-center color-white">With Slideheap, never use a boring stock image again! Move your audiences to act with over 750+ premium customizable slides from across 25+ niche to choose from.</p>
-			</div>
-		</div>
-	</div>
-	<img class="img-block" src="img/long-banner.png" alt="">
-</section>
-<section class="section prices snippet">
-	<div class="snippet-block"></div>
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-xl-10 d-flex flex-column justify-content-center align-items-center">
-				<h3 class="section__section-title text-center color-dark-gray">Receive Lifetime Access and Updates to Over 750+ Presentation Slides & Templates</h3>
-				<p class="section__section-description text-center color-dark-gray">Just one payment of $29 can get you an access to over wide range of professional infographics & Slides. So why wait get one time subscription today itself!</p>
-			</div>
-			<div class="col-12">
-				<div class="prices-tiles-wrapper">
-					<div class="prices-tiles__item">
-						<div class="prices-tiles__body white">
-							<h4 class="section__section-small-title">PROFESSIONAL</h4>
-							<h6 class="section__section-small-description">Unlimited Access</h6>
-							<h3 class="price-text font-weight-bold">$29.40</h3>
-							<div class="separate-line">
-								<div class="line"></div>
-							</div>
-							<ul class="price-benefits">
-								<li>1 User</li>
-								<li>750+ Unique Slides</li>
-								<li>1,000+ Icons</li>
-								<li>One Time Payment</li>
-								<li>Free Lifetime Updates</li>
-								<li>Fast and Free Support</li>
-							</ul>
-							<a href="#" class="d-inline-flex button standard-indent blue-button standard">Get full access</a>
-						</div>
-					</div>
-					<div class="prices-tiles__item">
-						<div class="prices-tiles__body blue">
-							<h4 class="section__section-small-title color-white">TEAM</h4>
-							<h6 class="section__section-small-description color-white">Unlimited Access</h6>
-							<h3 class="price-text font-weight-bold color-white">$89.40</h3>
-							<div class="separate-line">
-								<div class="line"></div>
-							</div>
-							<ul class="price-benefits">
-								<li>1 User</li>
-								<li>750+ Unique Slides</li>
-								<li>1,000+ Icons</li>
-								<li>One Time Payment</li>
-								<li>Free Lifetime Updates</li>
-								<li>Fast and Free Support</li>
-							</ul>
-							<a href="#" class="d-inline-flex button standard-indent blue-button standard">Get full access</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section feedbacks biggest-bottom-indent snippet">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-12 col-lg-10 col-xl-5">
-				<h3 class="section__section-middle-title color-dark-gray">Check testimonials for our satisfied clients</h3>
-				<p class="section__section-middle-description color-dark-gray">Customer satisfaction matters even more than price because that’s what drives us to create better products. Creating high-quality templates for better user experience is a significant factor in keeping our customers at anchor. Let’s look at what our beloved customers have to say about us!</p>
-			</div>
-			<div class="col-11 col-sm-12 col-lg-9 col-xl-7">
-				<div class="feedback-carousel-wrapper">
-					<div class="feedback-carousel">
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-						<div class="item">
-							<div class="item-body">
-								<div class="snippet-block">
-									<img src="img/brakets-snippet.png" alt="">
-								</div>
-								<div class="top-block">
-									<h4 class="title color-dark-gray">Eric Toonen</h4>
-									<span class="subtitle">Business Analyst</span>
-								</div>
-								<p class="description color-dark-gray">I absolutely love the slides Slideheap have created. Best part is they continue to come out with new updates and downloads at no extra cost!</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="slick-arrow-wrapper">
-					<div id="slick-prev" class="arrow-item arrow-slick">
-						<img src="img/arrow-left.svg" alt="">
-					</div>
-					<div id="slick-next" class="arrow-item arrow-slick">
-						<img src="img/arrow-right.svg" alt="" class="">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="section p-0 round-snippet-banner">
-	<div class="container-fluid container-xl">
-		<div class="row">
-			<div class="col-12 width-set">
-				<div class="banner__wrapper">
-					<div class="banner__block">
-						<div class="banner__content">
-							<h3 class="section__section-middle-title color-white text-center">Our Money back guarantee Policy</h3>
-							<p class="section__section-middle-description color-white text-center">We offer 100% money-back to our customers in case you find any issues with our products. All you need to do is to provide proof that your product isn’t working or if you’re facing any technical issue and we will make sure to respond as well as give you a complete refund.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<footer>
-	<div class="container">
-		<div class="row">
-			<div class="col-12">
-				<div class="wrapper-footer">
-					<div class="item-list">
-						<a href="#" class="logo d-inline-flex">
-							<img src="img/white-logo.svg" alt="">
-						</a>
-						<h6 class="title">The Premium and free PowerPoint templates and Keynote slides.</h6>
-						<p class="description"> Slideheap is a dedicated team of energetic designers who are specialized in Presentation Template creation. We want to offer you our best works of high quality resources that will take your presentation to the next level.</p>
-					</div>
-					<div class="item-list">
-						<h6 class="main-title">Categories</h6>
-						<ul class="list">
-							<li><a href="#">Timelines</a></li>
-							<li><a href="#">Process</a></li>
-							<li><a href="#">Social Media</a></li>
-							<li><a href="#">Marketing Infographics</a></li>
-							<li><a href="#">Goals Infographics</a></li>
-						</ul>
-					</div>
-					<div class="item-list">
-						<h6 class="main-title">Quick Links</h6>
-						<ul class="list">
-							<li><a href="#">Terms & Conditions</a></li>
-							<li><a href="#">Frequently Asked</a></li>
-							<li><a href="#">Questions</a></li>
-							<li><a href="#">Privacy Policy</a></li>
-							<li><a href="#">DMCA Policy</a></li>
-							<li><a href="#">Refund Policy</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-					</div>
-					<div class="item-list context-item">
-						<h6 class="main-title">Connect with us</h6>
-						<p class="main-description">Subscribe newsletter to get new updates.</p>
-						<input type="email" placeholder="Email Address" class="standard-input">
-						<a href="#" class="d-flex flex-row justify-content-center button standard-indent blue-button standard text-center">subscribe</a>
-						<ul class="link-list">
-							<li><a href="#"><img src="img/fb-icon.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/twitter-icon.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/instagram.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/pinterest.svg" alt=""></a></li>
-							<li><a href="#"><img src="img/behance.svg" alt=""></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
+
 
 
 
