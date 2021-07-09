@@ -85,6 +85,41 @@
 				line-height: 32px
 
 
+	.slider-popup-wrapper
+		.slider-popup-window
+			.slider-popup-body
+				width: 860px
+				.header-popup
+					.title
+						font-size: 80px
+						line-height: 100px
+				a.close-button
+					width: 34px
+				.form
+					.standard-input
+						height: 80px
+						border-radius: 20px
+						width: 100%
+						color: $gray-color
+						font-size: 28px
+						line-height: 35px
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 28px
+							line-height: 35px
+						&:-moz-placeholder
+							font-size: 28px
+							line-height: 35px
+						&::-moz-placeholder
+							font-size: 28px
+							line-height: 35px
+						&:-ms-input-placeholder
+							font-size: 28px
+							line-height: 35px
+						&::placeholder
+							font-size: 28px
+							line-height: 35px
 
 
 @media only screen and (max-width : 1300px)
@@ -123,6 +158,8 @@
 
 
 	header
+		.top-header
+			padding: 30px 0 20px
 		.top-menu li
 			padding: 0 25px
 		.top-menu li a,
@@ -134,7 +171,7 @@
 
 
 	.main-banner
-		padding: 80px 0 200px
+		padding: 200px 0 200px
 		.content-wrapper
 			.section__section-title
 				max-width: 900px
@@ -211,22 +248,52 @@
 			line-height: 36px
 
 	footer
-		.wrapper-footer
-			flex-wrap: wrap
-		.item-list
-			width: 100%
-			max-width: 280px
-			margin-bottom: 60px
-			&:first-of-type
-				max-width: 450px
-			&.context-item
-				order: 2
-			&:nth-of-type(2)
-				order: 3
-			&:nth-of-type(3)
-				order: 4
-		.link-list
-			margin-top: 35px
+		padding: 250px 0 50px
+
+	.slider-popup-wrapper
+		.slider-popup-window
+			.slider-popup-body
+				width: 760px
+				.header-popup
+					.title
+						font-size: 70px
+						line-height: 90px
+				a.close-button
+					width: 30px
+				.form-wrapper
+					margin-bottom: 30px
+				.main-body
+					height: 100%
+				.form-section
+					align-items: flex-start
+					justify-content: center
+				.form
+					.standard-input
+						height: 70px
+						border-radius: 20px
+						width: 100%
+						color: $gray-color
+						font-size: 26px
+						line-height: 33px
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 26px
+							line-height: 33px
+						&:-moz-placeholder
+							font-size: 26px
+							line-height: 33px
+						&::-moz-placeholder
+							font-size: 26px
+							line-height: 33px
+						&:-ms-input-placeholder
+							font-size: 26px
+							line-height: 33px
+						&::placeholder
+							font-size: 26px
+							line-height: 33px
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 
@@ -287,17 +354,16 @@
 		.button
 			&.standard
 				display: none!important
-		.top-header
-			padding: 30px 0
 		.navi-hamburger
 			display: flex
+			top: 2px
 		.bottom-header-line
 			.wrapper-content
 				display: none
 				
 
 	.main-banner
-		padding: 100px 0 160px
+		padding: 180px 0 160px
 		.content-wrapper
 			.section__section-description
 				max-width: 500px
@@ -343,17 +409,68 @@
 			font-size: 25px
 			line-height: 36px
 
+
+	.section.banner
+		.content-wrapper
+			.section__section-middle-description
+				font-size: 30px
+				line-height: 42px
+				margin-top: 20px
 	footer
-		.wrapper-footer
-			flex-wrap: wrap
-		.item-list
-			width: 100%
-			max-width: 280px
-			margin-bottom: 60px
-			&:first-of-type
-				max-width: 280px
-		.link-list
-			margin-top: 30px
+		padding: 200px 0 50px
+		.bottom-menu
+			li
+				margin-right: 50px
+				a
+					font-size: 20px
+		.link-menu
+			li
+				padding: 0 12px
+				a
+					width: 35px
+					height: 35px
+
+	.slider-popup-wrapper
+		.slider-popup-window
+			.slider-popup-body
+				width: 625px
+				.header-popup
+					.title
+						font-size: 60px
+						line-height: 70px
+				a.close-button
+					width: 28px
+				.form-wrapper
+					margin-bottom: 30px
+				.body-popup
+					height: 100%
+				.form
+					.standard-input
+						height: 60px
+						border-radius: 20px
+						width: 100%
+						color: $gray-color
+						font-size: 24px
+						line-height: 31px
+						padding: 0 25px
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 24px
+							line-height: 31px
+						&:-moz-placeholder
+							font-size: 24px
+							line-height: 31px
+						&::-moz-placeholder
+							font-size: 24px
+							line-height: 31px
+						&:-ms-input-placeholder
+							font-size: 24px
+							line-height: 31px
+						&::placeholder
+							font-size: 24px
+							line-height: 31px
+
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768.99px)
 	
@@ -413,7 +530,7 @@
 			width: 90px
 
 	.main-banner
-		padding: 80px 0 140px
+		padding: 160px 0 120px
 		.content-wrapper
 			.section__section-description
 				max-width: 440px
@@ -470,33 +587,101 @@
 			font-size: 22px
 			line-height: 31px
 
+	.section.banner
+		.content-wrapper
+			.section__section-middle-description
+				max-width: 420px
+				font-size: 24px
+				line-height: 34px
 	footer
-		.wrapper-footer
-			justify-content: center
-			.item-list
-				align-items: center
+		padding: 180px 0 40px
+		.bottom-menu
+			li
+				margin-right: 40px
+				a
+					font-size: 18px
+		.link-menu
+			li
+				padding: 0 10px
+				a
+					width: 28px
+					height: 28px
+
+	.slider-popup-wrapper
+		.slider-popup-window
+			.slider-popup-body
+				box-shadow: none
 				width: 100%
-				max-width: 50%
-				margin-bottom: 60px
-				&:last-of-type
-					margin-bottom: 30px
-				.title,
-				.description
-					text-align: center
-				.button
-					width: 100%
-					max-width: 100%
-				&:first-of-type
-					max-width: 100%
-				&.context-item
-					order: 4
-					max-width: 320px
-				.list
+				.header-popup
+					.title
+						text-align: center
+						font-size: 53px
+						line-height: 63px
+				a.close-button
+					width: 24px
+				.form-wrapper
+					margin-bottom: 25px
+					&.one-half
+						width: 100%
+					&:last-of-type
+						margin-bottom: 40px
+				.main-body
+					height: 100%
+				.body-popup
+					height: 100%
 					display: flex
 					flex-direction: column
 					align-items: center
-		.link-list
-			margin-top: 40px
+					padding: 30px 30px 60px
+				.wrapper-button
+					width: 100%
+					max-width: 100%
+				.form-section
+					height: 100%
+					width: 100%
+					max-width: 460px
+					display: flex
+					flex-direction: column
+					align-content: center
+					align-items: center
+					justify-content: center
+					&#thanks-block
+						justify-content: center!important
+						.header-popup
+							.title
+								margin-bottom: 25px
+							.section__section-description
+								text-align: center
+						.button
+							margin-top: 40px
+
+				.form
+					.standard-input
+						height: 55px
+						border-radius: 20px
+						width: 100%
+						color: $gray-color
+						font-size: 20px
+						line-height: 26px
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 20px
+							line-height: 26px
+						&:-moz-placeholder
+							font-size: 20px
+							line-height: 26px
+						&::-moz-placeholder
+							font-size: 20px
+							line-height: 26px
+						&:-ms-input-placeholder
+							font-size: 20px
+							line-height: 26px
+						&::placeholder
+							font-size: 20px
+							line-height: 26px
+
+
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width : 600px)
@@ -527,7 +712,17 @@
 			padding: 100px 0 80px
 		&.common
 			padding: 100px 0 80px
+	.section
+		.content-wrapper
+			.button
+				margin-top: 30px
 
+	.nav-mobile
+		#collapse
+			.button-wrapper
+				.button
+					max-width: 260px
+					padding: 10px 30px
 	.button.bigger
 		display: flex
 		flex-direction: row
@@ -538,7 +733,7 @@
 		max-width: 260px
 
 	.main-banner
-		padding: 80px 0 90px
+		padding: 130px 0 90px
 		.content-wrapper
 			.section__section-title
 				max-width: 310px
@@ -611,8 +806,109 @@
 			font-size: 18px
 			line-height: 29px
 
+	.section.banner
+		.content-wrapper
+			.section__section-middle-description
+				font-size: 18px
+				line-height: 28px
+
 	footer
-		padding: 250px 0 40px
+		padding: 100px 0 40px
+		.wrapper-content
+			flex-direction: column
+			align-items: center
+		.bottom-menu
+			flex-direction: column
+			margin-bottom: 40px
+			li
+				margin-right: 0
+				margin-bottom: 40px
+				a
+					font-size: 18px
+		.link-menu
+			li
+				padding: 0 10px
+				a
+					width: 28px
+					height: 28px
+
+	.slider-popup-wrapper
+		.slider-popup-window
+			height: 100%
+			&.active-popup
+				height: 100%
+				background-color: transparent
+			.slider-popup-body
+				width: 100%
+				.header-popup
+					.title
+						text-align: center
+						font-size: 35px
+						line-height: 45px
+						margin-bottom: 30px
+				.close-button
+					width: 25px
+				.form-wrapper
+					width: 90%
+					margin-bottom: 15px
+					&.one-half
+						width: 90%
+					&:last-of-type
+						margin-bottom: 25px
+				.main-body
+					height: 100%
+				.body-popup
+					height: 100%
+					display: flex
+					flex-direction: column
+					align-items: center
+					padding: 30px 20px 30px 20px
+				.wrapper-button
+					width: 100%
+					padding: 0 15px
+				.form-block
+					justify-content: center
+				.form-section
+					height: 100%
+					width: 100%
+					max-width: 320px
+					display: flex
+					flex-direction: column
+					align-content: center
+					align-items: center
+					justify-content: center
+				.button
+					width: 100%
+					max-width: 90%
+					height: 46px
+					align-items: center
+				.form
+					.standard-input
+						height: 46px
+						border-radius: 20px
+						width: 100%
+						color: $gray-color
+						font-size: 16px
+						line-height: 22px
+						padding: 0 20px
+						&:focus-visible
+							outline: none
+						&::-webkit-input-placeholder
+							font-size: 16px
+							line-height: 22px
+						&:-moz-placeholder
+							font-size: 16px
+							line-height: 22px
+						&::-moz-placeholder
+							font-size: 16px
+							line-height: 22px
+						&:-ms-input-placeholder
+							font-size: 16px
+							line-height: 22px
+						&::placeholder
+							font-size: 16px
+							line-height: 22px
+
 
 @media only screen and (max-width : 480px)
 

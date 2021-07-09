@@ -22,7 +22,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
+	<link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
 
 	<link rel="stylesheet" href="libs/bootstrap4/css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="libs/animate/animate.css">
@@ -33,12 +33,13 @@
 
 	<script src="libs/modernizr/modernizr.js"></script>
 
+
 </head>
 
 <body>
 
 
-<header>
+<header id="main-header">
 	<div class="top-header">
 		<div class="container-fluid container-xl container-widder">
 			<div class="row">
@@ -51,16 +52,16 @@
 					<div class="d-flex right-snippet">
 						<ul class="top-menu d-flex">
 							<li>
-								<a href="#" class="standard-text d-none d-sm-flex active">Home</a>
+								<a href="index.html" class="standard-text d-none d-sm-flex active">Home</a>
 							</li>
 							<li>
-								<a href="#" class="standard-text d-none d-sm-flex">About</a>
+								<a href="about-us.html" class="standard-text d-none d-sm-flex">About</a>
 							</li>
 							<li>
 								<a href="#" class="standard-text d-none d-sm-flex">DK/<span class="active">EN</span></a>
 							</li>
 						</ul>
-						<a href="#" class="button standard-indent blue-button standard d-flex">Request an invite</a>
+						<a href="#" class="button standard-indent blue-button standard d-flex open-slide-popup">Request an invite</a>
 						<a class="navi-hamburger">
 							<span class="top"></span>
 							<span></span>
@@ -78,46 +79,23 @@
 	<div id="collapse">
 		<ul>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>All templates</span></a>
+				<a href="index.html" class="link active"><span>Home</span></a>
 			</li>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>Timeline</span></a>
+				<a href="about-us.html" class="link"><span>About</span></a>
 			</li>
 			<li class="first-item-menu">
-				<a href="#" class="link"><span>SWOT</span></a>
+				<a href="#" class="link"><span>DK/<span class="active">EN</span></span></a>
 			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Roadmap</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Process</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Marketing</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Goals</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Education</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Pricing Table</span></a>
-			</li>
-			<li class="first-item-menu">
-				<a href="#" class="link"><span>Dashboards</span></a>
-			</li>
-
 		</ul>
 		<div class="button-wrapper">
-			<a href="#" class="button d-sm-none b-line standard-text standard-indent color-dark-gray standard">login</a>
-			<a href="#" class="button d-sm-none d-inline-flex standard-indent blue-button standard">get started</a>
+			<a href="#" class="button d-lg-none d-inline-flex standard-indent blue-button standard bigger open-slide-popup">Request an invite</a>
 		</div>
 	</div>
 </div>
 <!--End for mobile menu-->
 
-<section class="section main-banner">
+<section class="section main-banner before-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-12">
@@ -126,7 +104,7 @@
 						a great network</h1>
 					<p class="section__section-description color-gray text-center">Join or create micro-networks
 						that help people succeed</p>
-					<a href="#" class="button bigger standard-indent blue-button standard d-flex">Request an invite</a>
+					<a href="#" class="button bigger standard-indent blue-button standard d-flex open-slide-popup">Request an invite</a>
 				</div>
 			</div>
 		</div>
@@ -240,7 +218,95 @@
 		</div>
 	</div>
 </section>
+<section class="section banner light-pink">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 content-wrapper flex-column">
+				<h3 class="section__common-title color-dark-black text-center">Change is coming</h3>
+				<p class="section__section-middle-description color-gray text-center">We’re hard at work getting ready to launch iwe. <br/> Request your invite today and join our early beta program.</p>
+				<a href="#" class="button bigger standard-indent blue-button standard d-flex open-slide-popup">Request an invite</a>
+			</div>
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="wrapper-content d-flex">
+					<ul class="bottom-menu d-flex">
+						<li><a href="#">Privacy</a></li>
+						<li><a href="#">Press</a></li>
+					</ul>
+					<ul class="link-menu d-flex">
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 
+<!--slider-popup block-->
+
+<div id="product-details-popup" class="slider-popup-wrapper section">
+	<div class="slider-popup-window">
+		<div id="slider-popup" class="slider-popup-body">
+			<form action="" class="form main-body product-details">
+				<div class="body-popup">
+
+					<div class="wrapper-button">
+						<a href="#" class="close-button">
+							<img src="img/close-button.png" alt="">
+						</a>
+					</div>
+
+					<div class="form-section lateral-indent sizer-select" id="form-block">
+						<div class="header-popup lateral-indent">
+							<h3 class="title">Request an invite
+								for early access</h3>
+						</div>
+						<div class="form-block">
+							<div class="form-wrapper one-half">
+								<input type="text" class="standard-input" placeholder="First name">
+							</div>
+							<div class="form-wrapper one-half">
+								<input type="text" class="standard-input" placeholder="Last name">
+							</div>
+							<div class="form-wrapper">
+								<input type="email" class="standard-input" placeholder="Email address">
+							</div>
+							<div class="form-wrapper">
+								<input type="text" class="standard-input" placeholder="City">
+							</div>
+							<div class="form-wrapper">
+								<input type="text" class="standard-input" placeholder="Post code">
+							</div>
+						</div>
+						<button type="submit" class="button bigger standard-indent blue-button standard d-inline-flex" id="hide-block">Request an invite</button>
+					</div>
+
+					<div class="form-section lateral-indent sizer-select justify-content-around" id="thanks-block">
+						<div class="header-popup lateral-indent flex-column">
+							<h3 class="title">Thanks!</h3>
+							<p class="section__section-description color-gray mt-0">We can’t wait to see you for iwe’s
+								grand opening in Q4 2021.</p>
+						</div>
+
+						<button type="submit" class="button bigger standard-indent blue-button standard d-inline-flex close-button">Close this window</button>
+					</div>
+					
+
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<!--end of slider-popup block-->
 
 
 
@@ -255,6 +321,7 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
 	<script type="text/javascript" src="libs/slick/js/slick.min.js"></script>
 	
 	<script src="js/common.js"></script>

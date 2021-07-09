@@ -64,45 +64,13 @@ img
 		img
 			width: 22px
 
-.standard-input
-	display: flex
-	justify-content: center
-	align-items: center
-	background-color: transparent
-	border: 1px solid #c3c3c3
-	height: 40px
-	width: 100%
-	color: #3A3A3A
-	font-family: $Inter
-	font-size: 15px
-	font-weight: 400
-	padding: 0 15px
-	text-align: left
-	border-radius: 5px
-	-webkit-appearance: none
-	-moz-appearance: none
-	appearance: none
-	&:focus-visible
-		outline: none
-	&::-webkit-input-placeholder
-		font-size: 15px
-		color: $dark-gray
-	&:-moz-placeholder
-		font-size: 15px
-		color: $dark-gray
-	&::-moz-placeholder
-		font-size: 15px
-		color: $dark-gray
-	&:-ms-input-placeholder
-		font-size: 15px
-		color: $dark-gray
-	&::placeholder
-		font-size: 15px
-		color: $dark-gray
+
 
 button
 	background: none
 	border: none
+	&:hover
+		cursor: pointer
 	&:focus
 		outline: none
 
@@ -139,13 +107,17 @@ button
 
 
 header
-	position: relative
 	z-index: 200
+	width: 100%
+	position: fixed
+	background-color: $white-color
 	//box-shadow: 0 8px 11px #e3e4ea
 	&.non-box-shadow
 		box-shadow: none
+	&.resize
+		position: fixed
 	.top-header
-		padding: 40px 0 40px
+		padding: 35px 0 30px
 		.logo
 			margin-right: 35px
 		.wrapper-content
@@ -245,23 +217,25 @@ header
 	flex-direction: column
 	justify-content: space-between
 	position: fixed
-	top: 80px
+	//top: 80px
 	z-index: 2500
 	//padding-top: 160px
 	width: 100%
 	bottom: 0
 	height: 100%
 	left: -100%
-	background-color: #fafbfc
+	background-color: $white-color
 	transition-property: left
-	transition-duration: .3s
-	transition-timing-function: ease-in
+	-webkit-transition: all .4s ease-in-out 0s
+	transition: all .4s ease-in-out 0s
 	overflow: auto
 	.top-header
 		padding-left: 15px
 		padding-right: 15px
 	&.open
 		left: 0
+		-webkit-transition: all .4s ease-in-out 0s
+		transition: all .4s ease-in-out 0s
 	#collapse
 		display: flex
 		flex-direction: column
@@ -292,9 +266,10 @@ header
 				padding: 20px 20px
 				cursor: pointer
 				&.active
-					background-color: $blue-color
 					span
-						color: $white-color
+						color: #000000
+				span.active
+					color: #000000
 				&:hover
 					transition: background-color .5s
 					background-color: #5f92e6
@@ -302,19 +277,17 @@ header
 						transition: all .5s
 						color: $white-color
 						opacity: .8
-				&:active
-						background-color: $dark-blue-color
+
 				&:active
 					span
-						//color: $black-red
+						color: #000000
 				span,a
-					text-transform: uppercase
 					width: 100%
 					display: flex
 					font-weight: 600
-					font-size: 15px
-					line-height: 16px
-					color: $dark-gray
+					font-size: 18px
+					line-height: 20px
+					color: #646369
 				i.fa-chevron-right
 					transition: transform .15s ease-in-out,-webkit-transform .15s ease-in-out
 					//color: $orange
@@ -334,9 +307,11 @@ header
 			justify-content: center
 			padding-top: 20px
 			.button
+				justify-content: center
 				width: 100%
-				max-width: 360px
+				max-width: 320px
 				//max-width: 50%
+				padding: 14px
 				margin: 0px 20px 15px
 				&.b-line
 					border: 1px solid $dark-gray
@@ -347,7 +322,7 @@ header
 
 .main-banner
 	position: relative
-	padding: 80px 0 260px
+	padding: 220px 0 260px
 	.content-wrapper
 		display: flex
 		flex-direction: column
@@ -439,103 +414,183 @@ header
 	.img-wrapper
 		&.right-side
 			align-items: flex-end
-footer
-	padding: 200px 0 70px
-	background-color: #001840
-	color: #DDDDDD
-	&.standard-top-indent
-		padding-top: 90px
-	a
-		color: #DDDDDD
-	.wrapper-footer
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-	.logo
-		margin-bottom: 30px
-	.title
-		font-size: 12px
-		line-height: 18px
-		font-weight: 600
-		margin-bottom: 10px
-	.description
-		font-size: 12px
-		line-height: 18px
-		font-weight: 400
-	.right-side
-		width: 60%
-		display: flex
-		flex-direction: row
-		justify-content: space-between
-	.main-title
-		text-transform: uppercase
-		font-size: 16px
-		line-height: 25px
-		font-weight: 600
-		margin-bottom: 30px
-	.main-description
-		font-size: 13px
-		line-height: 20px
-		font-weight: 400
-	.item-list
-		display: flex
-		flex-direction: column
-		&:first-of-type
-			max-width: 450px
-		&.context-item
-			width: 100%
-			max-width: 280px
-		.main-description
-			margin-bottom: 15px
-		.standard-input
-			background-color: $white-color
-			height: 46px
-			font-size: 12px
-			font-weight: 400
-			color: #AFAFAF
-			margin-bottom: 10px
-			&::-webkit-input-placeholder
-				font-size: 12px
-				font-weight: 400
-				color: #AFAFAF
-			&:-moz-placeholder
-				font-size: 12px
-				font-weight: 400
-				color: #AFAFAF
-			&::-moz-placeholder
-				font-size: 12px
-				font-weight: 400
-				color: #AFAFAF
-			&:-ms-input-placeholder
-				font-size: 12px
-				font-weight: 400
-				color: #AFAFAF
-			&::placeholder
-				font-size: 12px
-				font-weight: 400
-				color: #AFAFAF
-		.button
-			padding: 12px 15px
-			font-weight: 500
 
-	.list
-		li
-			display: flex
-			margin-bottom: 8px
-			&:last-of-type
-				margin-bottom: 0
-			a
-				font-size: 13px
-				line-height: 20px
-				font-weight: 400
-	.link-list
-		display: flex
+.section
+	.content-wrapper
+		.button
+			margin-top: 50px
+footer
+	padding: 300px 0 50px
+	.wrapper-content
+		justify-content: space-between
+		align-items: flex-end
+	.bottom-menu
 		flex-direction: row
-		margin-top: 45px
+		align-items: center
 		li
-			margin-right: 26px
+			margin-right: 60px
+			&:last-of-type
+				margin-right: 0
+			a
+				font-size: 22px
+				font-weight: 500
+				color: #646369
+
+	.link-menu
+		flex-direction: row
+		li
+			padding: 0 14px
+			&:last-of-type
+				padding-right: 0
 			a
 				display: flex
+				width: 40px
+				height: 40px
+				svg
+					width: 100%!important
+					height: 100%!important
+					path
+						fill: #646369
+
+
+
+.slider-popup-wrapper
+	.slider-popup-window
+		display: flex
+		position: absolute
+		top: 0
+		&.active-popup
+			background-color: rgba(0, 0, 0, .2)
+			width: 100%
+			min-height: 100%
+			z-index: 3000
+		.slider-popup-body
+			position: fixed
+			z-index: 2500
+			top: 0
+			display: flex
+			width: 960px
+			right: -100%
+			//right: 0
+			overflow-y: scroll
+			height: 100%
+			min-height: 100%
+			background-color: #fff
+			box-shadow: 0px 0px 37.24px 0.76px rgba(1, 1, 1, 0.46)
+			-webkit-transition: all .8s ease-in-out 0s
+			transition: all .8s ease-in-out 0s
+			&.active-body
+				right: 0
+				-webkit-transition: all .8s ease-in-out 0s
+				transition: all .8s ease-in-out 0s
+
+			.form-block
+				display: flex
+				flex-wrap: wrap
+				margin-right: -10px
+				margin-left: -10px
+			.wrapper-button
+				display: flex
+				flex-direction: row
+				justify-content: flex-end
+				margin-bottom: 15px
+			a.close-button
+				display: flex
+				align-items: center
+				width: 38px
+				img
+					display: block
+			.form-wrapper
+				padding: 0 10px
+				width: 100%
+				margin-bottom: 30px
+				&.one-half
+					width: 50%
+			.body-popup
+				display: flex
+				flex-direction: column
+				flex-grow: 1
+			.form-section
+				display: flex
+				flex-direction: column
+				justify-content: center
+				align-items: flex-start
+				flex-grow: 1
+				.section__section-description
+					font-weight: 400
+				&#thanks-block
+					display: none
+			.form
+				.standard-input
+					height: 90px
+					border-radius: 20px
+					display: flex
+					justify-content: center
+					align-items: center
+					background-color: transparent
+					border: 1px solid #707070
+					width: 100%
+					color: $gray-color
+					font-family: $Inter
+					font-size: 30px
+					line-height: 40px
+					font-weight: 400
+					padding: 0 30px
+					text-align: left
+					-webkit-appearance: none
+					-moz-appearance: none
+					appearance: none
+					&:focus-visible
+						outline: none
+					&::-webkit-input-placeholder
+						font-size: 30px
+						line-height: 40px
+						color: $gray-color
+					&:-moz-placeholder
+						font-size: 30px
+						line-height: 40px
+						color: $gray-color
+					&::-moz-placeholder
+						font-size: 30px
+						line-height: 40px
+						color: $gray-color
+					&:-ms-input-placeholder
+						font-size: 30px
+						line-height: 40px
+						color: $gray-color
+					&::placeholder
+						font-size: 30px
+						line-height: 40px
+						color: $gray-color
+			//settings class for popup
+
+			//end of settings class for popup
+			.main-body
+				width: inherit
+				height: 100%
+				display: flex
+				flex-direction: column
+
+			.header-popup
+				width: inherit
+				z-index: 100
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				font-weight: 700
+				font-size: 32px
+				line-height: 40px
+				color: #000
+				.title
+					font-size: 90px
+					line-height: 120px
+					margin-bottom: 40px
+
+			.body-popup
+				padding: 30px 50px 60px 40px
+
+
+
 
 
 //ALWAYS END
