@@ -151,8 +151,12 @@ button {
   padding: 65px 0 90px; }
   .section.common {
     padding: 260px 0 280px; }
+  .section.middle-common {
+    padding: 190px 0 110px; }
   .section.light-pink {
     background-color: #FFF4F7; }
+  .section.slider-popup-wrapper {
+    padding: 0; }
   .section.biggest-bottom-indent {
     padding-bottom: 240px; }
   .section__section-title {
@@ -207,6 +211,9 @@ button {
     max-width: 500px; }
   .section .content-right-side {
     max-width: 860px; }
+
+.text-list .section__common-description {
+  margin-bottom: 45px; }
 
 .main-title {
   font-size: 54px;
@@ -363,18 +370,15 @@ header {
         justify-content: space-between;
         align-items: center;
         padding: 20px 20px;
-        cursor: pointer; }
+        cursor: pointer;
+        transition: opacity .5s; }
         .nav-mobile #collapse li.first-item-menu .link.active span {
           color: #000000; }
         .nav-mobile #collapse li.first-item-menu .link span.active {
           color: #000000; }
         .nav-mobile #collapse li.first-item-menu .link:hover {
-          transition: background-color .5s;
-          background-color: #5f92e6; }
-          .nav-mobile #collapse li.first-item-menu .link:hover span {
-            transition: all .5s;
-            color: #ffffff;
-            opacity: .8; }
+          transition: opacity .5s;
+          opacity: .8; }
         .nav-mobile #collapse li.first-item-menu .link:active span {
           color: #000000; }
         .nav-mobile #collapse li.first-item-menu .link span, .nav-mobile #collapse li.first-item-menu .link a {
@@ -411,10 +415,14 @@ header {
 .main-banner {
   position: relative;
   padding: 220px 0 260px; }
+  .main-banner.low {
+    padding-bottom: 40px; }
   .main-banner .content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center; }
+    .main-banner .content-wrapper.short-wide .title {
+      max-width: 1100px; }
     .main-banner .content-wrapper .section__section-title {
       max-width: 1250px; }
     .main-banner .content-wrapper .section__section-description {
@@ -422,6 +430,9 @@ header {
       margin-top: 50px; }
   .main-banner .button {
     margin-top: 100px; }
+
+.banner.high-block {
+  padding: 125px 0 130px; }
 
 .banner .section__section-title {
   line-height: 115px; }
@@ -907,6 +918,8 @@ footer {
     line-height: 56px; }
   .section.context-block {
     padding: 200px 0 150px; }
+  .section.middle-common {
+    padding: 140px 0 90px; }
   .section__section-title {
     font-size: 70px;
     line-height: 70px; }
@@ -937,6 +950,10 @@ footer {
     line-height: 38px; }
   .section.common {
     padding: 160px 0 120px; }
+  .text-list .section__common-description {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 35px; }
   .button.bigger {
     padding: 16px 80px 18px;
     font-size: 22px; }
@@ -951,10 +968,14 @@ footer {
     display: none; }
   .main-banner {
     padding: 180px 0 160px; }
+    .main-banner.low .section__common-title {
+      font-size: 60px; }
     .main-banner .content-wrapper .section__section-description {
       max-width: 500px; }
     .main-banner .button {
       margin-top: 60px; }
+  .banner.high-block {
+    padding: 100px 0 110px; }
   .banner .section__section-title {
     line-height: 60px; }
   .tile-blocks .tile-body {
@@ -1056,9 +1077,15 @@ footer {
   .section__common-description {
     font-size: 24px;
     line-height: 34px; }
+  .text-list .section__common-description {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 35px; }
   .button.bigger {
     padding: 14px 60px 18px;
     font-size: 20px; }
+  .section.middle-common {
+    padding: 120px 0 80px; }
   .section.common {
     padding: 140px 0 100px; }
   header .top-header {
@@ -1067,11 +1094,15 @@ footer {
     width: 90px; }
   .main-banner {
     padding: 160px 0 120px; }
+    .main-banner.low .section__common-title {
+      font-size: 45px; }
     .main-banner .content-wrapper .section__section-description {
       max-width: 440px;
       margin-top: 30px; }
     .main-banner .button {
       margin-top: 50px; }
+  .banner.high-block {
+    padding: 70px 0 90px; }
   .banner .section__section-title {
     line-height: 45px; }
   .banner .snippet::after {
@@ -1204,8 +1235,8 @@ footer {
     font-size: 32px;
     line-height: 32px; }
   .section__section-description {
-    font-size: 21px;
-    line-height: 30px; }
+    font-size: 20px;
+    line-height: 28px; }
   .section__section-small-description {
     font-size: 18px;
     line-height: 28px; }
@@ -1220,12 +1251,18 @@ footer {
     line-height: 26px; }
   .section {
     padding: 40px 0 70px; }
+    .section.middle-common {
+      padding: 90px 0 60px; }
     .section.context-block {
       padding: 100px 0 80px; }
     .section.common {
       padding: 100px 0 80px; }
   .section .content-wrapper .button {
     margin-top: 30px; }
+  .text-list .section__common-description {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 25px; }
   .nav-mobile #collapse .button-wrapper .button {
     max-width: 260px;
     padding: 10px 30px; }
@@ -1238,14 +1275,21 @@ footer {
     width: 100%;
     max-width: 260px; }
   .main-banner {
-    padding: 130px 0 90px; }
+    padding: 160px 0 90px; }
+    .main-banner.low {
+      padding-bottom: 70px; }
+      .main-banner.low .section__common-title {
+        font-size: 30px;
+        line-height: 35px; }
     .main-banner .content-wrapper .section__section-title {
       max-width: 310px; }
     .main-banner .content-wrapper .section__section-description {
       max-width: 300px;
-      margin-top: 30px; }
+      margin-top: 25px; }
     .main-banner .content-wrapper .button {
       margin-top: 40px; }
+  .banner.high-block {
+    padding: 70px 0 70px; }
   .banner .section__section-title {
     font-size: 35px;
     margin-bottom: 20px; }
