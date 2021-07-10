@@ -551,9 +551,11 @@ footer {
   display: flex;
   position: fixed;
   z-index: 2400;
-  top: 0; }
+  top: 0;
+  transition: all 2s; }
   .slider-popup-wrapper .slider-popup-window.active-popup {
     background-color: rgba(0, 0, 0, 0.2);
+    transition: all 2s;
     width: 100%;
     min-height: 100%;
     z-index: 3000; }
