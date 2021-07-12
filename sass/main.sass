@@ -80,7 +80,7 @@ button
 		border-radius: 20px
 		color: $white-color
 	&.standard-indent
-		padding: 14px 25px 17px 25px
+		padding: 10px 20px 11px 20px
 	&.blue-button
 		background-color: $blue-color
 		transition: opacity .5s
@@ -98,8 +98,8 @@ button
 	&.color-dark-gray
 		color: $dark-gray
 	&.bigger
-		padding: 25px 125px 27px
-		font-size: 30px
+		padding: 15px 100px 18px
+		font-size: 20px
 
 //end main component style
 
@@ -117,8 +117,9 @@ header
 	&.resize
 		position: fixed
 	.top-header
-		padding: 35px 0 30px
+		padding: 30px 0 30px
 		.logo
+			width: 75px
 			margin-right: 35px
 		.wrapper-content
 			display: flex
@@ -138,19 +139,19 @@ header
 		flex-direction: row
 		align-items: center
 		li
-			padding: 0 30px
+			padding: 0 40px
 			&:last-of-type
 				padding-right: 0
 			a
 				color: #646369
-				font-size: 22px
+				font-size: 14px
 				font-weight: 600
 				&.active
 					color: $black-color
 				.active
 					color: $black-color
 	.button.standard
-		font-size: 22px
+		font-size: 14px
 		margin-left: 60px
 		border-radius: 16px
 
@@ -263,7 +264,7 @@ header
 				flex-direction: row
 				justify-content: space-between
 				align-items: center
-				padding: 20px 20px
+				padding: 18px 20px
 				cursor: pointer
 				transition: opacity .5s
 				&.active
@@ -286,8 +287,8 @@ header
 					width: 100%
 					display: flex
 					font-weight: 600
-					font-size: 18px
-					line-height: 20px
+					font-size: 16px
+					line-height: 18px
 					color: #646369
 				i.fa-chevron-right
 					transition: transform .15s ease-in-out,-webkit-transform .15s ease-in-out
@@ -310,9 +311,9 @@ header
 			.button
 				justify-content: center
 				width: 100%
-				max-width: 320px
+				max-width: 280px
 				//max-width: 50%
-				padding: 14px
+				padding: 12px
 				margin: 0px 20px 15px
 				&.b-line
 					border: 1px solid $dark-gray
@@ -323,7 +324,7 @@ header
 
 .main-banner
 	position: relative
-	padding: 220px 0 260px
+	padding: 220px 0 230px
 	&.low
 		padding-bottom: 40px
 	.content-wrapper
@@ -334,31 +335,31 @@ header
 			.title
 				max-width: 1100px
 		.section__section-title
-			max-width: 1250px
+			max-width: 850px
 		.section__section-description
-			max-width: 800px
-			margin-top: 50px
-	.button
-		margin-top: 100px
+			max-width: 560px
+			font-size: 35px
+			line-height: 47px
+			margin-top: 25px
+		.button
+			margin-top: 40px
 
 
 .banner
 	&.high-block
 		padding: 125px 0 130px
-	.section__section-title
-		line-height: 115px
 	.snippet
 		position: relative
 		&::after
 			content: " "
 			position: absolute
 			background-image: url("../img/heard-icon.svg")
-			width: 36px
-			height: 36px
+			width: 24px
+			height: 24px
 			background-repeat: no-repeat
 			background-size: cover
-			bottom: 6px
-			right: -55px
+			bottom: 10px
+			right: -40px
 
 
 
@@ -367,38 +368,41 @@ header
 	display: flex
 	flex-direction: row
 	justify-content: space-between
-	padding-top: 100px
+	padding-top: 70px
 	margin-right: -25px
 	margin-left: -25px
 	.tile-body-wrapper
+		display: flex
 		padding: 0 25px
+		width: 33.33px
+		min-width: 390px
 	.tile-body
 		display: flex
 		flex-direction: column
 		align-items: center
 		background-color: #F7F7F8
 		border-radius: 20px
-		max-width: 440px
-		padding: 80px 25px 35px
+		min-height: 390px
+		padding: 50px 15px 35px
 		margin-bottom: 50px
 		&__tile-img
-			width: 80px
+			width: 55px
 		&__title
-			font-size: 35px
-			line-height: 47px
+			font-size: 25px
+			line-height: 33px
 			font-weight: 500
-			margin-top: 70px
+			margin-top: 25px
 			margin-bottom: 10px
 			max-width: 300px
 			text-align: center
 		&__description
 			text-align: center
-			font-size: 35px
-			line-height: 42px
+			font-size: 25px
+			line-height: 30px
 			font-weight: 400
 
 .img-banner
-	padding: 340px 0 160px
+	padding: 230px 0 60px
 	background-image: url("../img/banner-img.jpg")
 	background-repeat: no-repeat
 	background-size: cover
@@ -407,13 +411,14 @@ header
 		line-height: 100%
 		margin-bottom: 10px
 	.section__common-description
-		max-width: 900px
+		max-width: 760px
 
 .context-block
+
 	.row+.row
-		margin-top: 240px
+		margin-top: 160px
 	.section__common-title
-		margin-bottom: 60px
+		margin-bottom: 40px
 		line-height: 100%
 	.break-word
 		display: block
@@ -423,12 +428,14 @@ header
 		&.right-side
 			align-items: flex-end
 
+
 .section
+	&.banner
 	.content-wrapper
 		.button
-			margin-top: 50px
+			margin-top: 25px
 footer
-	padding: 300px 0 50px
+	padding: 100px 0 25px
 	.wrapper-content
 		justify-content: space-between
 		align-items: flex-end
@@ -436,24 +443,24 @@ footer
 		flex-direction: row
 		align-items: center
 		li
-			margin-right: 60px
+			margin-right: 80px
 			&:last-of-type
 				margin-right: 0
 			a
-				font-size: 22px
+				font-size: 14px
 				font-weight: 500
 				color: #646369
 
 	.link-menu
 		flex-direction: row
 		li
-			padding: 0 14px
+			padding: 0 10px
 			&:last-of-type
 				padding-right: 0
 			a
 				display: flex
-				width: 40px
-				height: 40px
+				width: 25px
+				height: 25px
 				svg
 					width: 100%!important
 					height: 100%!important
