@@ -427,7 +427,8 @@ header {
   position: relative;
   padding: 220px 0 200px; }
   .main-banner.full-height {
-    height: 100vh; }
+    height: 100vh;
+    padding: 80px 0 40px !important; }
   .main-banner.low {
     padding-bottom: 40px; }
   .main-banner .content-wrapper {
