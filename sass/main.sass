@@ -323,8 +323,13 @@ header
 
 
 .main-banner
+	display: flex
+	flex-direction: column
+	justify-content: center
 	position: relative
 	padding: 220px 0 200px
+	&.full-height
+		height: 100vh
 	&.low
 		padding-bottom: 40px
 	.content-wrapper
@@ -409,9 +414,11 @@ header
 	background-position: center
 	.section__common-title
 		line-height: 100%
-		margin-bottom: 10px
+		margin-bottom: 20px
 	.section__common-description
-		max-width: 760px
+		max-width: 730px
+		font-size: 25px
+		line-height: 30px
 
 .context-block
 

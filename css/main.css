@@ -421,8 +421,13 @@ header {
           border: 1px solid #5D5D5D; }
 
 .main-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   position: relative;
   padding: 220px 0 200px; }
+  .main-banner.full-height {
+    height: 100vh; }
   .main-banner.low {
     padding-bottom: 40px; }
   .main-banner .content-wrapper {
@@ -502,9 +507,11 @@ header {
   background-position: center; }
   .img-banner .section__common-title {
     line-height: 100%;
-    margin-bottom: 10px; }
+    margin-bottom: 20px; }
   .img-banner .section__common-description {
-    max-width: 760px; }
+    max-width: 730px;
+    font-size: 25px;
+    line-height: 30px; }
 
 .context-block .row + .row {
   margin-top: 160px; }
@@ -765,7 +772,9 @@ footer {
     .img-banner .section__common-title {
       margin-bottom: 25px; }
     .img-banner .section__common-description {
-      max-width: 670px; }
+      max-width: 670px;
+      font-size: 23px;
+      line-height: 28px; }
   .context-block .row + .row {
     margin-top: 130px; }
   .context-block .section__common-title {
