@@ -162,9 +162,9 @@
 	//.section__section-description
 	//	font-size: 23px
 	//	line-height: 26px
-	//.section__section-small-description
-	//	font-size: 28px
-	//	line-height: 40px
+	.section__section-small-description
+		font-size: 23px
+		line-height: 34px
 	.section__common-title
 		font-size: 55px
 		line-height: 60px
@@ -201,12 +201,17 @@
 				font-size: 28px
 				line-height: 40px
 				max-width: 440px
+			&.short-wide
+				.title
+					max-width: 600px
 		.button
 			margin-top: 75px
 
 	.section
 		&.common
 			padding: 160px 0 120px
+		&.middle-common
+			padding: 110px 0 100px
 		.content-right-side
 			max-width: 590px
 
@@ -241,21 +246,21 @@
 			font-size: 25px
 			line-height: 36px
 
-
-
+	.text-list
+		.section__common-description
+			font-size: 23px
+			line-height: 28px
 
 	.slider-popup-wrapper
 		.slider-popup-window
 			.slider-popup-body
-				width: 760px
+
 				.header-popup
 					.title
-						font-size: 70px
-						line-height: 90px
-				a.close-button
-					width: 30px
-				.form-wrapper
-					margin-bottom: 30px
+						font-size: 60px
+						line-height: 70px
+
+
 				.main-body
 					height: 100%
 				.form-section
@@ -263,29 +268,29 @@
 					justify-content: center
 				.form
 					.standard-input
-						height: 70px
+						height: 55px
 						border-radius: 20px
 						width: 100%
 						color: $gray-color
-						font-size: 26px
-						line-height: 33px
+						font-size: 18px
+						line-height: 26px
 						&:focus-visible
 							outline: none
 						&::-webkit-input-placeholder
-							font-size: 26px
-							line-height: 33px
+							font-size: 18px
+							line-height: 26px
 						&:-moz-placeholder
-							font-size: 26px
-							line-height: 33px
+							font-size: 18px
+							line-height: 26px
 						&::-moz-placeholder
-							font-size: 26px
-							line-height: 33px
+							font-size: 18px
+							line-height: 26px
 						&:-ms-input-placeholder
-							font-size: 26px
-							line-height: 33px
+							font-size: 18px
+							line-height: 26px
 						&::placeholder
-							font-size: 26px
-							line-height: 33px
+							font-size: 18px
+							line-height: 26px
 
 
 /* Medium Devices, Desktops */
@@ -297,7 +302,7 @@
 		&.context-block
 			padding: 200px 0 150px
 		&.middle-common
-			padding: 140px 0 90px
+			padding: 100px 0 70px
 		&__section-title
 			font-size: 50px
 			&.reduce-line-height
@@ -321,6 +326,7 @@
 			margin-top: 15px
 		&__common-title
 			font-size: 45px
+			line-height: 55px
 		&__common-description
 			font-size: 24px
 			line-height: 32px
@@ -329,9 +335,9 @@
 
 	.text-list
 		.section__common-description
-			font-size: 24px
+			font-size: 20px
 			line-height: 30px
-			margin-bottom: 35px
+			margin-bottom: 25px
 	.button
 		&.bigger
 			padding: 12px 70px 14px
@@ -355,9 +361,6 @@
 
 	.main-banner
 		padding: 180px 0 120px
-		&.low
-			.section__common-title
-				font-size: 60px
 		.content-wrapper
 			.section__section-title
 				max-width: 480px
@@ -366,8 +369,12 @@
 				line-height: 35px
 				max-width: 360px
 				margin-top: 0
+			&.short-wide
+				.title
+					max-width: 490px
 		.button
 			margin-top: 60px
+
 
 	.section
 		&.common
@@ -447,46 +454,46 @@
 					width: 20px
 					height: 20px
 
-	.slider-popup-wrapper
-		.slider-popup-window
-			.slider-popup-body
-				width: 625px
-				.header-popup
-					.title
-						font-size: 60px
-						line-height: 70px
-				a.close-button
-					width: 28px
-				.form-wrapper
-					margin-bottom: 30px
-				.body-popup
-					height: 100%
-				.form
-					.standard-input
-						height: 60px
-						border-radius: 20px
-						width: 100%
-						color: $gray-color
-						font-size: 24px
-						line-height: 31px
-						padding: 0 25px
-						&:focus-visible
-							outline: none
-						&::-webkit-input-placeholder
-							font-size: 24px
-							line-height: 31px
-						&:-moz-placeholder
-							font-size: 24px
-							line-height: 31px
-						&::-moz-placeholder
-							font-size: 24px
-							line-height: 31px
-						&:-ms-input-placeholder
-							font-size: 24px
-							line-height: 31px
-						&::placeholder
-							font-size: 24px
-							line-height: 31px
+	//.slider-popup-wrapper
+	//	.slider-popup-window
+	//		.slider-popup-body
+	//			width: 625px
+	//			.header-popup
+	//				.title
+	//					font-size: 60px
+	//					line-height: 70px
+	//			a.close-button
+	//				width: 28px
+	//			.form-wrapper
+	//				margin-bottom: 30px
+	//			.body-popup
+	//				height: 100%
+	//			.form
+	//				.standard-input
+	//					height: 60px
+	//					border-radius: 20px
+	//					width: 100%
+	//					color: $gray-color
+	//					font-size: 24px
+	//					line-height: 31px
+	//					padding: 0 25px
+	//					&:focus-visible
+	//						outline: none
+	//					&::-webkit-input-placeholder
+	//						font-size: 24px
+	//						line-height: 31px
+	//					&:-moz-placeholder
+	//						font-size: 24px
+	//						line-height: 31px
+	//					&::-moz-placeholder
+	//						font-size: 24px
+	//						line-height: 31px
+	//					&:-ms-input-placeholder
+	//						font-size: 24px
+	//						line-height: 31px
+	//					&::placeholder
+	//						font-size: 24px
+	//						line-height: 31px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768.99px)
@@ -532,9 +539,9 @@
 
 	.text-list
 		.section__common-description
-			font-size: 22px
-			line-height: 30px
-			margin-bottom: 35px
+			font-size: 18px
+			line-height: 28px
+			margin-bottom: 20px
 
 	.text-break
 		display: initial
@@ -547,7 +554,7 @@
 	.section
 		padding: 40px 0 50px
 		&.middle-common
-			padding: 120px 0 80px
+			padding: 80px 0 70px
 		&.common
 			padding: 100px 0 80px
 			&.tiles
@@ -575,6 +582,9 @@
 				max-width: 320px
 				font-size: 20px
 				line-height: 26px
+			&.short-wide
+				.title
+					max-width: 490px
 
 		.button
 			margin-top: 50px
@@ -652,18 +662,17 @@
 
 
 	footer
-		padding: 180px 0 40px
 		.bottom-menu
 			li
 				margin-right: 40px
 				a
-					font-size: 18px
+					font-size: 16px
 		.link-menu
 			li
 				padding: 0 10px
 				a
-					width: 28px
-					height: 28px
+					width: 20px
+					height: 20px
 
 	.slider-popup-wrapper
 		.slider-popup-window
@@ -673,16 +682,16 @@
 				.header-popup
 					.title
 						text-align: center
-						font-size: 53px
-						line-height: 63px
+						font-size: 40px
+						line-height: 50px
 				a.close-button
-					width: 24px
+					width: 20px
 				.form-wrapper
-					margin-bottom: 25px
+					margin-bottom: 20px
 					&.one-half
 						width: 100%
 					&:last-of-type
-						margin-bottom: 40px
+						margin-bottom: 25px
 				.main-body
 					height: 100%
 				.body-popup
@@ -697,7 +706,7 @@
 				.form-section
 					height: 100%
 					width: 100%
-					max-width: 460px
+					max-width: 380px
 					display: flex
 					flex-direction: column
 					align-content: center
@@ -712,32 +721,38 @@
 								text-align: center
 						.button
 							margin-top: 40px
+					.button
+						padding: 14px 100px 16px
+
+						justify-content: center
+						align-items: center
+						font-size: 18px
 
 				.form
 					.standard-input
-						height: 55px
+						height: 45px
 						border-radius: 20px
 						width: 100%
 						color: $gray-color
-						font-size: 20px
-						line-height: 26px
-						&:focus-visible
-							outline: none
-						&::-webkit-input-placeholder
-							font-size: 20px
-							line-height: 26px
-						&:-moz-placeholder
-							font-size: 20px
-							line-height: 26px
-						&::-moz-placeholder
-							font-size: 20px
-							line-height: 26px
-						&:-ms-input-placeholder
-							font-size: 20px
-							line-height: 26px
-						&::placeholder
-							font-size: 20px
-							line-height: 26px
+						//font-size: 20px
+						//line-height: 26px
+						//&:focus-visible
+						//	outline: none
+						//&::-webkit-input-placeholder
+						//	font-size: 20px
+						//	line-height: 26px
+						//&:-moz-placeholder
+						//	font-size: 20px
+						//	line-height: 26px
+						//&::-moz-placeholder
+						//	font-size: 20px
+						//	line-height: 26px
+						//&:-ms-input-placeholder
+						//	font-size: 20px
+						//	line-height: 26px
+						//&::placeholder
+						//	font-size: 20px
+						//	line-height: 26px
 
 
 /* Extra Small Devices, Phones */
@@ -767,7 +782,7 @@
 	.section
 		padding: 40px 0 70px
 		&.middle-common
-			padding: 90px 0 60px
+			padding: 80px 0 60px
 		&.context-block
 			padding: 100px 0 80px
 		&.common
@@ -776,12 +791,15 @@
 		.content-wrapper
 			.button
 				margin-top: 30px
+			.section__section-title
+				margin-bottom: 15px
 
 	.text-list
 		.section__common-description
 			font-size: 18px
 			line-height: 28px
-			margin-bottom: 25px
+			margin-bottom: 20px
+
 
 
 	.nav-mobile
@@ -812,6 +830,9 @@
 			.section__section-description
 				max-width: 300px
 				margin-top: 15px
+			&.short-wide
+				.title
+					max-width: 320px
 			.button
 				margin-top: 25px
 	.banner
@@ -854,11 +875,13 @@
 			font-size: 18px
 			line-height: 26px
 
+
 	.context-block
 		.row+.row
 			margin-top: 80px
 		.section__common-title
 			font-size: 35px
+			line-height: 40px
 			margin-bottom: 25px
 			text-align: center
 		.img-wrapper
@@ -871,32 +894,35 @@
 			text-align: center
 			font-size: 18px
 			line-height: 28px
+		.break-word
+			display: initial
 
 	.section.banner
+		padding: 40px 0 50px
 		.content-wrapper
 			.section__section-middle-description
 				font-size: 18px
 				line-height: 28px
 
 	footer
-		padding: 100px 0 40px
+		padding: 70px 0 50px
 		.wrapper-content
 			flex-direction: column
 			align-items: center
 		.bottom-menu
 			flex-direction: column
-			margin-bottom: 40px
+			margin-bottom: 15px
 			li
 				margin-right: 0
-				margin-bottom: 40px
+				margin-bottom: 30px
 				a
-					font-size: 18px
+					font-size: 16px
 		.link-menu
 			li
 				padding: 0 10px
 				a
-					width: 28px
-					height: 28px
+					width: 20px
+					height: 20px
 
 	.slider-popup-wrapper
 		.slider-popup-window
@@ -909,11 +935,10 @@
 				.header-popup
 					.title
 						text-align: center
-						font-size: 35px
-						line-height: 45px
+						font-size: 32px
+						line-height: 40px
 						margin-bottom: 30px
-				.close-button
-					width: 25px
+
 				.form-wrapper
 					width: 90%
 					margin-bottom: 15px
@@ -943,49 +968,46 @@
 					align-content: center
 					align-items: center
 					justify-content: center
-				.button
-					width: 100%
-					max-width: 90%
-					height: 46px
-					align-items: center
+					.button
+						padding: 0
+
+					.button
+						width: 100%
+						max-width: 90%
+						height: 44px
+						align-items: center
+						font-size: 16px
 				.form
 					.standard-input
-						height: 46px
+						height: 44px
 						border-radius: 20px
 						width: 100%
 						color: $gray-color
-						font-size: 16px
+						font-size: 15px
 						line-height: 22px
 						padding: 0 20px
 						&:focus-visible
 							outline: none
 						&::-webkit-input-placeholder
-							font-size: 16px
+							font-size: 15px
 							line-height: 22px
 						&:-moz-placeholder
-							font-size: 16px
+							font-size: 15px
 							line-height: 22px
 						&::-moz-placeholder
-							font-size: 16px
+							font-size: 15px
 							line-height: 22px
 						&:-ms-input-placeholder
-							font-size: 16px
+							font-size: 15px
 							line-height: 22px
 						&::placeholder
-							font-size: 16px
+							font-size: 15px
 							line-height: 22px
 
 
 @media only screen and (max-width : 480px)
+	/**/
 
-	footer
-		.main-title
-			margin-bottom: 25px
-		.wrapper-footer
-			flex-direction: column
-			align-items: center
-			.item-list
-				max-width: 320px!important
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
